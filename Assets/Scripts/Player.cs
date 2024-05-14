@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public Rigidbody rb;
     public Transform cameraTransform;
     public GameManager gameManager;
+    public int speed = 5;
 
     void Update()
     {
