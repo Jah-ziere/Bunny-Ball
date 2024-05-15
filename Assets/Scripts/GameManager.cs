@@ -8,9 +8,13 @@ public class GameManager : MonoBehaviour
     public GameObject winnerUI;
     public GameObject player;
 
+    // checks if gameOver is true or false //
     private void Update()
     {
-       //is the game over?
+       if(gameOver == true)
+       {
+          GameOver();
+       }
     }
 
     void GameOver() {
