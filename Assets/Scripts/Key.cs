@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Key : MonoBehaviour
 {
     [SerializeField] GameObject shockwavePrefab;
@@ -14,7 +15,11 @@ public class Key : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) {
-            gameManager.gameOver = true;
+            gameManager.currentLevel++;
+            if(gameManager.currentLevel == 3)
+            {
+               gameManager.gameOver = true;
+            }
             Instantiate(shockwavePrefab, transform.position, Quaternion.identity);
             Destroy(gameObject, 0.1f);
         }

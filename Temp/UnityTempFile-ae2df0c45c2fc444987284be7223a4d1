@@ -321,7 +321,6 @@
 "Assets/Scripts/GameInstructions.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Key.cs"
-"Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/SimpleRotate.cs"
 "Assets/SimpleParticlePack/Scripts/ParticleTester.cs"
